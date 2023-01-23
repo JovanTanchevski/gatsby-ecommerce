@@ -2218,6 +2218,7 @@ input.num-product::-webkit-inner-spin-button {
   font-size: 14px;
   line-height: 1.466667;
   letter-spacing: 1px;
+  text-decoration: none;
 }
 
 .stext-106 {
@@ -3592,10 +3593,13 @@ input.num-product::-webkit-inner-spin-button {
     padding: 20px;
   }
 }
-.top-bar,
+.top-bar a,
 .menu-desktop a {
   text-decoration: none;
 }
 .isotope-item {
   margin-left: 5px;
+}
+.items-content a {
+  text-decoration: none;
 }
