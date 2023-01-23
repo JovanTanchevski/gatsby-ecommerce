@@ -2,18 +2,18 @@ import { Link } from 'gatsby';
 import * as React from 'react';
 export interface UserInt {
   id: string;
-  gender?: string;
   description?: string;
   img: string;
   price: number;
   title: string;
+  gender?: string;
 }
 interface Props {
   user: UserInt;
 }
 const ProductItem = ({ user }: Props) => {
   return (
-    <a className="col-sm-6  col-md-4 col-lg-3 p-b-35 ">
+    <a className="col-sm-6  col-md-4 col-lg-3  p-b-35 ">
       <div className="block2">
         <div className="block2-pic hov-img0">
           <img src={user.img} alt="IMG-PRODUCT" />

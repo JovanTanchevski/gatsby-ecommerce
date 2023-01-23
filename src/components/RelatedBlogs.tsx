@@ -21,7 +21,7 @@ const RelatedBlogs = ({ blogs }: Props) => {
           blogs.length > 0 &&
           blogs.map((blog) => {
             return (
-              <li className="mb-4">
+              <li key={blog.id} className="mb-4">
                 <a className="wrao-pic-w">
                   <img src={blog.img} alt="PRODUCT" className="img-fluid" />
 
