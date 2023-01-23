@@ -93,7 +93,7 @@ const Shop = ({ data }: Props) => {
             </div>
           </div>
 
-          <div className="row isotope-grid">
+          <div className="row items-content">
             {productData.map((data) => {
               return <ProductItem key={data.id} user={data} />;
             })}
