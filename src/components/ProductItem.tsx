@@ -13,7 +13,7 @@ interface Props {
 }
 const ProductItem = ({ user }: Props) => {
   return (
-    <a className="col-sm-6  col-md-4 col-lg-3 p-b-35 isotope-item ">
+    <a className="col-sm-6  col-md-4 col-lg-3 p-b-35 ">
       <div className="block2">
         <div className="block2-pic hov-img0">
           <img src={user.img} alt="IMG-PRODUCT" />
@@ -25,10 +25,10 @@ const ProductItem = ({ user }: Props) => {
           </Link>
         </div>
 
-        <div className="block2-txt flex-w flex-t p-t-14">
+        <div className="block2-txt flex-w flex-t p-t-14 ">
           <div className="block2-txt-child1 flex-col-l ">
-            <div className="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-              {user.title}
+            <div className="stext-104 cl4 hov-cl1  p-b-6 ">
+              <p className="m-0 p-0"> {user.title}</p>
             </div>
 
             <span className="stext-105 cl3">{user.price}</span>
