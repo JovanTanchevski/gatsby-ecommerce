@@ -5,7 +5,7 @@ interface Props {
 }
 const FeaturedBlogs = ({ blogs }: Props) => {
   return (
-    <section className="sec-blog bg0 p-t-60 p-b-90">
+    <section className="sec-blog bg0 p-t-60 p-b-90 items-content">
       <div className="container">
         <div className="p-b-66">
           <h3 className="ltext-105 cl5 txt-center respon1">Our Blogs</h3>
@@ -23,13 +23,13 @@ const FeaturedBlogs = ({ blogs }: Props) => {
                   <div className="p-t-15">
                     <div className="stext-107 flex-w p-b-14">
                       <span className="m-r-3">
-                        <span className="cl4">By</span>
+                        <span className="cl4">By </span>
 
                         <span className="cl5">{blog.author}</span>
                       </span>
 
                       <span>
-                        <span className="cl4">on</span>
+                        <span className="cl4">on </span>
 
                         <span className="cl5 ml-1">{blog.date}</span>
                       </span>
@@ -37,7 +37,7 @@ const FeaturedBlogs = ({ blogs }: Props) => {
 
                     <h4 className="p-b-12">
                       <div className="mtext-101 cl2 hov-cl1 trans-04">
-                        title
+                        {blog.title}
                       </div>
                     </h4>
 
