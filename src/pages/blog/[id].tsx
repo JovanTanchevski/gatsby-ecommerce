@@ -83,7 +83,7 @@ const BlogDetail = ({ data }: Props) => {
 
 export default BlogDetail;
 // export const query = graphql`
-//   query BlogTitle {
+//   query blogIdQuery {
 //     dbJson(
 //       blogs: {
 //         elemMatch: { id: { eq: "45348cb0-c4e9-40a7-888f-24541aba6192" } }
@@ -96,7 +96,7 @@ export default BlogDetail;
 //   }
 // `;
 export const query = graphql`
-  query MyQuery {
+  query blogIdQuery {
     allDbJson {
       edges {
         node {

@@ -52,7 +52,6 @@ interface Props {
 const Home = ({ data }: Props) => {
   const { preTitle, title } = data.allDbJson.edges[0].node.banner_content;
   let featuredBlogData = data.blogs.edges[0].node.blogs.slice(0, 4);
-  console.log(featuredBlogData);
 
   return (
     <Layout>
@@ -66,7 +65,7 @@ const Home = ({ data }: Props) => {
 
 export default Home;
 export const query = graphql`
-  query MyQuery {
+  query indexQuery {
     allDbJson {
       edges {
         node {

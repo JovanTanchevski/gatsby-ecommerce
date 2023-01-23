@@ -33,7 +33,7 @@ const Blog = ({ data }: Props) => {
         <div className="container">
           <div className="row">
             <div className="col-md-8 col-lg-9 p-b-80">
-              <div className="p-r-45 p-r-0-lg">
+              <div className="p-r-45 p-r-0-lg items-content">
                 {blogData && blogData.length > 0 ? (
                   blogData.map((blog) => {
                     return <BlogItem key={blog.id} blog={blog} />;
@@ -105,7 +105,7 @@ const Blog = ({ data }: Props) => {
 
 export default Blog;
 export const query = graphql`
-  query MyQuery {
+  query BlogIndexQuery {
     allDbJson {
       edges {
         node {

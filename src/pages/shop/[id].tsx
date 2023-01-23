@@ -101,7 +101,7 @@ const ShopDetail = ({ data }: Props) => {
 
 export default ShopDetail;
 export const query = graphql`
-  query MyQuery {
+  query productDetailQuery {
     allDbJson {
       edges {
         node {

@@ -2,10 +2,29 @@ import { graphql } from 'gatsby';
 import PageTitle from '../components/PageTitle';
 import * as React from 'react';
 import Layout from '../components/Layout';
-
-const About = ({ data }: any) => {
-  console.log(data.allDbJson.edges[0].node.about_page);
-
+interface Props {
+  data: {
+    allDbJson: {
+      edges: {
+        node: {
+          about_page: {
+            author: string;
+            fifth_content: string;
+            first_content: string;
+            first_image: string;
+            fourth_content: string;
+            second_content: string;
+            second_image: string;
+            second_title: string;
+            third_content: string;
+            title;
+          };
+        };
+      };
+    };
+  };
+}
+const About = ({ data }: Props) => {
   const {
     title,
     author,
@@ -64,7 +83,7 @@ const About = ({ data }: any) => {
             <div className="order-md-1 col-11 col-md-5 col-lg-4 m-lr-auto p-b-30">
               <div className="how-bor2">
                 <div className="hov-img0">
-                  <img src={second_image} alt="IMG" />
+                  <img src={first_image} alt="IMG" />
                 </div>
               </div>
             </div>

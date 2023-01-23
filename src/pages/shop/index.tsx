@@ -123,7 +123,7 @@ const Shop = ({ data }: Props) => {
 
 export default Shop;
 export const query = graphql`
-  query MyQuery {
+  query productsQuery {
     allDbJson {
       edges {
         node {
