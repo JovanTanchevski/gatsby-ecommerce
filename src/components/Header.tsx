@@ -1,7 +1,7 @@
 import { Link } from 'gatsby';
 import React from 'react';
 
-const Header: React.FC = () => {
+const Header = () => {
   return (
     <>
       <header className="header-v4">
@@ -41,7 +41,7 @@ const Header: React.FC = () => {
 
               <div className="menu-desktop">
                 <ul className="main-menu">
-                  <li className="active-menu">
+                  <li>
                     <Link to="/">
                       <a>Home</a>
                     </Link>
